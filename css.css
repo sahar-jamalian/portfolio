@@ -1,0 +1,401 @@
+body {
+     font-family: 'Open Sans', serif;;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.sidebar {
+    width: 22%;
+    background-color:#bd5d38;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.profile-picture {
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 195px;
+    height: 185px;
+    object-fit: cover;
+    border: #b3775f 10px solid;
+
+}
+
+.menu {
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+    background-color: #bd5d38; 
+    justify-content: center;
+    font-size: 26px;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #bb8874;
+}
+
+.content {
+    margin-left:0; /* این برابر با عرض نوار سمت راست است */
+    
+}
+
+.top-bar {
+    width: 100%;
+    height: 50px;
+    background-color: #bd5d38;
+}
+.top-bar h1{
+    justify-content: center;
+    text-align: center;
+    color:white;
+    padding-left: 210px;
+}
+
+
+
+.content {
+    margin-left: 22%; /* این برابر با عرض نوار سمت چپ است */
+    padding: 20px;
+    width: 78%; /* این برابر با عرض محتوای اصلی است */
+    text-align: center; /* مرکز‌چینی محتوا */
+    height: 570px;
+    
+}
+
+.main-content {
+    margin-top: 50px; 
+}
+.main-content h1{
+    text-align: left;
+    margin-top: 260px;
+padding-left: 40px;
+font-family: 'Saira Extra Condensed', serif;
+    font-weight:700;
+    text-transform: uppercase;
+    font-size: 90px;
+    
+
+
+}
+span{color: #bd5d38;}
+
+#born{text-align: left;
+padding-left: 40px;
+padding-top: -10px;}
+#text{
+    text-align: left;
+    padding-left: 40px;
+    font-size: 30px;
+    
+}
+.top-bar {
+    width: 100%;
+    height: 50px;
+    background-color: #bd5d38;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.top-bar h1 {
+    text-align: center;
+    color: white;
+    margin: 0;
+    line-height: 50px;
+    font-size: 24px;
+}
+.project h1{
+text-align: left;
+    margin-top: 260px;
+padding-left: 60px;
+font-family: 'Saira Extra Condensed', serif;
+    font-weight:700;
+    margin-left: 22%;
+    text-transform: uppercase;
+    font-size: 50px;}
+    .project {
+        margin-top: 50px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .project h1 {
+        text-align: left;
+        margin-top: 20px;
+        padding-left: 60px;
+        font-family: 'Saira Extra Condensed', serif;
+        font-weight: 700;
+        margin-left: 22%;
+        text-transform: uppercase;
+        font-size: 50px;
+    
+    
+    }
+    .theme-toggle {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    
+    }
+    #dark{
+        margin-left: 42%;
+        color:#333 ;
+
+    }
+    #dark:hover{
+        color: #bb8874;
+    }
+    body.dark-mode {
+        background-color: #121212;
+        color: #ffffff;
+    }
+    
+    body.dark-mode .sidebar {
+        background-color: #333333;
+    }
+    
+    body.dark-mode .menu li a {
+        color: #ffffff;
+    }
+    
+    body.dark-mode .menu li a:hover {
+        background-color: #444444;
+    }
+    
+    body.dark-mode .top-bar {
+        background-color: #333333;
+    }
+    
+    body.dark-mode .button {
+        background-color: #444444;
+    }
+    
+    body.dark-mode .button:hover {
+        background-color: #555555;
+    }
+    
+    body.dark-mode .card {
+        background-color: #333333;
+        border-color: #444444;
+    }
+    
+    body.dark-mode .card h2, 
+    body.dark-mode .card p {
+        color: #ffffff;
+    }
+    
+    body.dark-mode .skill-level {
+        background-color: #444444;
+    }
+    
+    
+    .project-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        margin-top: 20px;
+        padding-left: 22%;
+        
+    }
+    .theme-toggle i {
+        margin-left: 30%;
+        padding-left: 
+        500px;
+    }
+    .card {
+        background-color: #f9f9f9;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        margin: 10px;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+    
+    .card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .card img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .card-content {
+        padding: 15px;
+    }
+    
+    .card h2 {
+        font-size: 24px;
+        margin: 0 0 10px;
+        color: #333;
+    }
+    
+    .card p {
+        font-size: 16px;
+        color: #666;
+        margin: 0 0 15px;
+    }
+    
+    .button {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #bd5d38;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    .button:hover {
+        background-color: #bb8874;
+    }
+    .skill-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 40%;
+    }
+    
+    .skill {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    
+    .skill-name {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    .container h2{ 
+        text-align: left;
+        margin-top: 20px;
+        padding-left: 60px;
+        font-family: 'Saira Extra Condensed', serif;
+        font-weight: 700;
+    margin-left: 22%;
+        text-transform: uppercase;
+        font-size: 50px;
+    }
+    
+    .skill-level {
+        background-color: #bd5d38;
+        height: 30px;
+        line-height: 30px;
+        color: white;
+        border-radius: 5px;
+        padding: 0 10px;
+        width: 0%; 
+        transition: width 2s; 
+    }
+    #contact {
+        margin-top: 50px;
+        padding: 20px;
+        text-align: center;
+        margin-left: 24%;
+        padding-left: 20px;
+    }
+    
+    #contact h2 {
+
+        margin-top: 20px;
+        padding-left: 2px;
+        font-family: 'Saira Extra Condensed', serif;
+        font-weight: 700;
+        margin-left: 0.5%;
+        text-transform: uppercase;
+        font-size: 50px;
+        text-align: left;
+    }
+    
+    #contact form {
+        margin-left: 22%;
+        margin-right: 22%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .form-group label {
+        display: block;
+        text-align: left;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+    
+    textarea {
+        height: 100px;
+    }
+    
+    button[type="submit"] {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #bd5d38;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    button[type="submit"]:hover {
+        background-color: #bb8874;
+    }
+    
+    .social-icons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .social-icons a {
+        margin: 0 10px;
+        display: inline-block;
+    }
+    
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+    }

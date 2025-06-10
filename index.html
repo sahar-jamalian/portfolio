@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پرتوفلیو</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="/java.js">
+    <link rel="stylesheet" href="./font/fontawesome-free-6.5.2-web/css/all.min.css">
+
+
+<body>
+    
+    <div class="top-bar"><h1>frontend developer</h1></div>
+    <button class="theme-toggle" onclick="toggleTheme()"><i class="fas fa-sun"></i></button>
+
+
+    
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="profile-picture">
+                <img src="" alt="">
+            </div>
+            <ul class="menu">
+                <li><a href="#about">about me</a></li>
+                <li><a href="#project"> project</a></li>
+                <li><a href="#skills">skill</a></li>
+                <li><a href="#contact"> contact me</a></li>
+             <li class="theme-toggle" id="dark" onclick="toggleTheme()"> dark </li>
+            </ul>
+            
+        </div>
+        <div class="content">
+          
+            <div class="main-content" id="about">
+                <h1> sahar     <span>jamalian</span> </h1>
+                <p id="born">I was born in the winter of 1981 in Tehran</p>
+                <p id="text">I am studying computer engineering and I am frontend developer now.</p>
+
+            </div>
+        </div>
+     
+
+       </div>
+       <div class="project" id="project">
+        <h1>projects</h1>
+        <div class="project-cards">
+            <div class="card">
+                <img src="./images/Screenshot (37).png" alt="پروژه پیش بینی اب و هوا">
+                <div class="card-content">
+                    <h2>Project 1</h2>
+                    <p>With this project, you can easily find the weather of any region of the world</p>
+                    <a href="/weather/index.html" class="button">View Demo</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/Screenshot (38).png" alt="پروژه 2">
+                <div class="card-content">
+                    <h2>Project 2</h2>
+                    <p>This project is a strong markdown provider</p>
+                    <a href="/mark/index.html" class="button">View Demo</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/Screenshot (39).png" alt="پروژه 3" height="320px">
+                <div class="card-content">
+                    <h2>Project 3</h2>
+                    <p>If you are a teacher, this project is made for you to easily take the online test</p>
+                    <a href="/queeez/index.html" class="button">View Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            
+                <div class="skill-bar">
+    <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="skill-level" data-level="80%">80%</div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-level" data-level="60%">60%</div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-level" data-level="10%">10%</div>
+    </div>
+</div>
+<script src="/java.js"></script>
+
+            </div>
+        
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+            <div class="social-icons">
+                <a href="https://telegram.me/sahar-jmz" target="_blank"><i class="fab fa-telegram-plane" alt="Telegram"></i></a>
+                <a href="https://wa.me/09102694832" target="_blank"><i class="fab fa-whatsapp" alt="WhatsApp"></i></a>
+                <a href="https://instagram.com/saaharjamali-" target="_blank"><i class="fab fa-instagram" alt="Instagram"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          
+</body>
+</html>
